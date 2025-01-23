@@ -729,7 +729,7 @@
   }
 
   .footer-main {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 200px 1fr 70px;
   }
 
   .footer-column:nth-child(1) {
@@ -757,6 +757,8 @@
   
   .footer-soc1als-list {
     padding-left: 0;
+
+    column-gap: 20px;
   }
 
 }
@@ -767,8 +769,10 @@
   }
 
   .footer-main {
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 60px 1fr 1fr;
+    grid-template-rows: repeat(3, 170px);
     row-gap: 20px;
+    padding-bottom: 50px;
   }
 
   .header-logo {
@@ -776,12 +780,16 @@
     height: auto;
   }
   .footer-column:nth-child(1) {
-    width: 120px;
+    grid-row: 1 / 2;
   }
 
   .footer-column:nth-child(2),
   .footer-column:nth-child(3) {
     grid-row: 2;
+  }
+
+  .footer-column:nth-child(3) {
+    padding-left: 40px;
   }
 
   .footer-column:nth-child(5) {
@@ -792,5 +800,9 @@
     grid-row: 3;
     width: 100px;
     margin-left: 50px;
+  }
+
+  .footer-contacts-item a {
+    white-space: nowrap;
   }
 }
